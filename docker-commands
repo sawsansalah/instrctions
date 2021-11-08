@@ -55,3 +55,14 @@ e) stop asking the password for sudo:
 -------------------------------------
 sudo visudo                            // run this command
 jenkins ALL=(ALL) NOPASSWD: ALL        // at the end of the file add this line then click ctrl+x
+
+
+-----------------------------------
+11:07:41 ERROR: Couldn't find any revision to build. Verify the repository and branch configuration for this job.
+SCM:
+1) select Git
+2) Name: origin
+3) Refspec: +refs/pull/*:refs/remotes/origin/pr/*
+4) Branches to build : leave blank
+
+This solved the above error.
